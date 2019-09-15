@@ -1,14 +1,13 @@
-/** {
+/*{
     border: 1px solid red !important;
 }
 
-* {
+{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-}
-*/
+}*/
 
 body{
   background-size: cover;
@@ -39,39 +38,39 @@ hr{
 }
 
 .info-title{    
-  padding-left: 0px;
+  padding-left: 0%;
   font-family: 'Quicksand', sans-serif;
   font-weight: 600;    
   color: #333C47;  
 }
 
 .big-name{    
-  margin-top: 0px;
+  margin-top: 0%;
   font-family: 'Quicksand', sans-serif;
   font-weight: 600;    
   color: #333C47;
 }
 
 .information{  
-  padding-left: 2px;
+  padding-left: 0.2%;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
 
 .school-img{
-  padding-left: 20px;
-  padding-right: 20px;    
-  padding-bottom: 25px; 
+  padding-left: 2.5%;
+  padding-right: 2.5%;    
+  padding-bottom: 3.5%; 
 }
 
 .box {
-  padding-left: 17px;
+  padding-left: 0.2%;
   margin-bottom: 20px;
   font-size: 15px;
 }
 
 .prof-pic{
-  padding-bottom: 20px;
+  padding-bottom: 6%;
   max-width:75%;
   height:auto;
   border-radius: 50%;
@@ -79,11 +78,11 @@ hr{
 
 /* --------Set a specific color for each brand ---------*/
 .rightmost{
-  padding-right: 0px;
+  padding-right: 0%;
 }
 
 .leftmost{
-  padding-left: 0px;
+  padding-left: 0%;
 }
 
 .fa {
