@@ -1,0 +1,15 @@
+In this paper, a simple but effective methodology is proposed for 
+human activity recognition. Major focus of the work is on the design 
+of descriptor for the video sequence. Frames are first represented 
+by commonly used histogram of oriented gradients and histogram of 
+flows. Using these histograms, a semidetailed frame level descriptor 
+is formed. It is further augmented by incorporating contextual 
+information. Frame level descriptors are then summarized to obtain 
+the sequence level features that are utilized in activity recognition. 
+SVM classifier is used for recognition. Proposed methodology is simple 
+enough and free from any tracking and intensive details. Experiment is 
+done on the KTH dataset. Performance of the proposed descriptors and 
+their combinations are studied. Result indicates the potential of 
+proposed features along with the contextual information. Comparison 
+with a number of existing systems show that the performance of the 
+proposed methodology is comparable.

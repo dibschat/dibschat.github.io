@@ -1,0 +1,11 @@
+Recently, deep learning for physical layer has been
+modeled using autoencoders to model the entire communication
+system end-to-end. We extend these methods to improve the
+overall performance by adopting various learning strategies when
+multiple users try to communicate over a shared channel. We
+consider cooperative and non-cooperative schemes in the 2-user
+Gaussian interference channel. Additionally, a simple neural
+network architecture is provided for wireless communication
+systems where channel gain matrix either attenuates or, in
+some cases, results in fading of the message signal sent by the
+transmitter.
