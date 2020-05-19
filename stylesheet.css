@@ -1,8 +1,7 @@
 /* Color scheme taken from Sergey Karayev */
     
     a:any-link {
-      /* color: #c9e2fa; */
-      color: rgb(0, 14, 204);  
+      color: rgb(0, 25, 204); 
       text-decoration: none;
     }
     
@@ -31,8 +30,8 @@
     }
 
     pmid {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      /*font-family:'Source Sans Pro', sans-serif;*/
+      /*font-family: 'Lato', Verdana, Helvetica, sans-serif;*/
+      font-family:'Source Sans Pro', sans-serif;
       font-size: 17px;
       color: rgb(61, 61, 61);
     }
