@@ -1,0 +1,17 @@
+Person re-identification in the wild needs to simultaneously 
+(frame-wise) detect and re-identify persons and has wide
+utility in practical scenarios. However, such tasks come
+with an additional open-set re-ID challenge as all probe
+persons may not necessarily be present in the (frame-wise)
+dynamic gallery. Traditional or close-set re-ID systems are
+not equipped to handle such cases and raise several false alarms 
+as a result. To cope with such challenges open-set metric learning 
+(OSML), based on the concept of Large margin nearest neighbor (LMNN) 
+approach, is proposed. We term our method Open-Set LMNN (OS-LMNN). 
+The goal of separating impostor samples from the genuine samples
+is achieved through a joint optimization of the Weibull distribution 
+and the Mahalanobis metric learned through this OS-LMNN approach. 
+The rejection is performed based on low probability over distance 
+of imposter pairs. Exhaustive experiments with other metric learning 
+techniques over the publicly available PRW dataset clearly demonstrate 
+the robustness of our approach.
