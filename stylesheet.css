@@ -77,6 +77,7 @@
     }
     
     body {
+      background-color: rgb(75, 75, 80);
       background-size: auto;
       background-repeat:no-repeat;
       background-position: center top; 
@@ -133,6 +134,9 @@
       font-weight: 700;
     }
 
+    img {
+      pointer-events: none;
+    }
     .one {
       width: 160px;
       height: 160px;
