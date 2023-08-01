@@ -47,15 +47,28 @@ body {
   color: #000;
   background-color: #fff;
   margin: 0 auto;
-  width: 50%; /* Set the width to 50% to center the page */
+  padding: 0;
 }
 
-header {
+table {
+  max-width: 1280px; /* Maximum width for screens larger than 1280px */
+  width: 100%; /* Fallback width for smaller screens */
+  margin: 0 auto; /* Center the container */
+  background-color: white;
+}
+
+strong {
+  font-weight: bold; /* Sets the font weight to bold (700) */
+}
+
+table .header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  right: 0;
   background-color: #000;
+  max-width: 100%;
+  width: 100%;
 }
 
 .top-bar {
@@ -64,7 +77,9 @@ header {
   /*padding: 1rem 2rem;*/
   align-items: center;
   margin: 0 auto;
-  width: 50%;
+  max-width: 1280px;
+  width: 100%; /* Fallback width for smaller screens */
+  margin: 0 auto; /* Center the container */
 }
 
 .top-bar ul {
@@ -87,16 +102,12 @@ header {
   color: #FF2800;
 }
 
-table {
-  width: 100%;
-  margin: 0 auto;
-  /*padding: 2rem;*/
-  margin-top: 10px;
-  /*width: 30%;*/
+.left-side{
+  padding-left: 10px;
 }
 
-strong {
-  font-weight: bold; /* Sets the font weight to bold (700) */
+.right-side{
+  padding-right: 10px;
 }
 
 /*img {
@@ -125,20 +136,19 @@ strong {
   border-radius: 3px;*/
 }
 
-
 .bio-row {
-  margin-top: 70px;
+  padding-top: 50px;
   display: flex;
   gap: 20px;
 }
 
 .profile-image {
-  width: 250px;
-  height: 250px;
+  padding-top: 20px;
+  width: 250px;  
   border-radius: 50%;
   /*margin-bottom: 1rem;*/
-  margin-left: 2em;
-  margin-right: 2em;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .mail {
@@ -146,15 +156,15 @@ strong {
   text-align: center;
   font-size: 18px;
   font-weight: 600;
-  font-family: "Courier New";
+  /*font-family: "Courier New", sans-serif;*/
   color: gray;
 }
 
 .office {
   text-align: center;
   font-size: 18px;
-  font-weight: 600;
-  font-family: "Consolas";
+  font-weight: 700;
+  /*font-family: "Courier New", sans-serif;*/
 }
 
 .social-media {
@@ -178,13 +188,8 @@ strong {
   border-radius: 0px;
 }
 
-.profile-side {
-  width: 50%;
-}
-
 .bio-text {
-  padding-top: 3%;
-  /*padding-bottom: 3%;*/
+  padding-top: 32px;
   vertical-align : middle;
 }
 
@@ -250,4 +255,10 @@ strong {
 .footnote{
   color: gray;
   margin-top: 30px;
+}
+
+@media (min-width: 1280px) {
+  .table {
+    width: 1280px;
+  }
 }
