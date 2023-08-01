@@ -1,179 +1,245 @@
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+/* Reset some default styles for consistency */
+h1, h2, h3 {
+  padding-bottom: 0.2em;
+  line-height: 1.25;
+  /*padding-top: 0.5em;*/
+  font-weight: 500;
 }
 
-/* Color scheme taken from Sergey Karayev */
-    
-    a:any-link {
-      color: rgb(0, 25, 204); 
-      text-decoration: none;
-    }
-    
-    a:focus,
-    a:hover {
-      color: #0C90FF;
-      text-decoration: none;
-    }
-    
-    body {
-      background-color: rgb(75, 75, 80);
-      background-size: auto;
-      background-repeat:no-repeat;
-      background-position: center top; 
-      margin-top: 10px;
-    }
+h1 {
+  border-bottom: 1.2px solid #e1e4e8;
+  font-size: 24px;
+}
 
-    td,
-    th,
-    tr,
-    p,
-    a {
-      /*font-family: 'Lato', Verdana, Helvetica, sans-serif;*/
-      font-family:'Source Sans Pro', sans-serif;
-      font-size: 15px;
-      /*color: rgb(61, 61, 61);*/
-    }
+h2 {
+  /*padding-top: 0.8em;*/
+  margin-bottom: 16px;
+  font-size: 24px;
+}
 
-    pmid {
-      /*font-family: 'Lato', Verdana, Helvetica, sans-serif;*/
-      font-family:'Source Sans Pro', sans-serif;
-      font-size: 17px;
-      color: rgb(61, 61, 61);
-    }
-    
-    strong {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 15px;
-      color: black;
-    }
-    
-    heading {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 22px;
-      color: black;
-    }
+/*h2 + h3 {
+  padding-top: 4px;
+}*/
 
-    midheading {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 18px;
-      color: black;
-    }
-    
-    papertitle {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 15px;
-      font-weight: 700;
-      color: black;
-    }
-    
-    name {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 36px;
-      color: black;
-      font-weight: 700;
-    }
+h3 {
+  font-size: 24px;
+  padding-top: 0px;
+  margin-bottom: 0px;
+  border-bottom: none;
+}
 
-    img {
-      pointer-events: none;
-    }
-    .one {
-      width: 160px;
-      height: 160px;
-      position: relative;
-    }
-    
-    .two {
-      width: 160px;
-      height: 160px;
-      position: absolute;
-      transition: opacity .2s ease-in-out;
-      -moz-transition: opacity .2s ease-in-out;
-      -webkit-transition: opacity .2s ease-in-out;
-    }
-    
-    .fade {
-      transition: opacity .2s ease-in-out;
-      -moz-transition: opacity .2s ease-in-out;
-      -webkit-transition: opacity .2s ease-in-out;
-    }
-    
-    span.highlight {
-      background-color: #ffffd0;
-    }
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 0.0em;
+  margin-bottom: 0.8em;
+  padding: 0;
+  text-align: justify;
+}
 
-    .bottom-padding {
-     margin-bottom: 40px;
-    }
+body {
+  /*font-family: breezesans, sans-serif;*/
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+         Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+         Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+         "Segoe UI Symbol";
+  line-height: 1.6;
+  color: #000;
+  background-color: #fff;
+  margin: 0 auto;
+  width: 50%; /* Set the width to 50% to center the page */
+}
 
-    .top-padding {
-     margin-top: 40px;
-    }
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+}
 
-    .dp-top-padding {
-     margin-top: 40px;
-    }
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  /*padding: 1rem 2rem;*/
+  align-items: center;
+  margin: 0 auto;
+  width: 50%;
+}
 
-    li{
-    margin: 10px 0;
-    }
+.top-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.top-bar li {
+  margin-left: 2rem;
+}
+
+.top-bar a {
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.top-bar a:hover {
+  color: #FF2800;
+}
+
+table {
+  width: 100%;
+  margin: 0 auto;
+  /*padding: 2rem;*/
+  margin-top: 10px;
+  /*width: 30%;*/
+}
+
+strong {
+  font-weight: bold; /* Sets the font weight to bold (700) */
+}
+
+/*img {
+  pointer-events: none;
+}*/
+
+.table a:link{
+  text-decoration: none;
+  color: #FF2800;
+  /*background-color: white;*/
+  font-weight: 600;
+}
+
+.table a:hover{
+  /*color: #FF2800;*/
+  /*color: #4B9FE3;*/
+  color: black;
+  font-weight: 600;
+  /*background-color: black;
+  color: white;
+  padding: 0.2rem 0.2rem;
+  border-radius: 3px;*/
+}
+
+
+.bio-row {
+  margin-top: 70px;
+  display: flex;
+  gap: 20px;
+}
+
+.profile-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  /*margin-bottom: 1rem;*/
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.mail {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Courier New";
+  color: gray;
+}
+
+.office {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Consolas";
+}
+
+.social-media {
+  font-size: 48px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.social-media i {
+  color: black;
+}
+
+.social-media i:hover {
+  color: #FF2800;
+}
+
+.social-media a:hover {
+  background-color: white;
+  padding: 0.0rem 0.0rem; /* Add this line to create some padding around the link text */
+  border-radius: 0px;
+}
+
+.profile-side {
+  width: 50%;
+}
+
+.bio-text {
+  padding-top: 3%;
+  /*padding-bottom: 3%;*/
+  vertical-align : middle;
+}
+
+.news-scroll-box {
+  height: 120px;
+  overflow: auto;
+  background-color: #f7f5f5;
+  padding: 10px;
+}
+
+.publications-list {
+  margin-bottom: 1.5em;
+  display: flex;
+  gap: 20px;
+}
+
+.publications-list img {
+  width: 300px;
+}
+
+.publication-name{
+  font-size: large;
+  font-weight: bold;
+}
+
+/*.publication-authors{
+  font-style:italic; 
+}*/
+
+.publication-info {
+  font-style:italic;
+}
+
+.publication-links {
+  margin-top: 0.4rem;
+  gap: 20px;
+}
+
+.publication-links a:link {
+  background-color: black;
+  color: white;
+  padding: 0.3rem 0.5rem;
+  border-radius: 3px;
+}
+
+.publication-links a:hover {
+  background-color: white;
+  color: red;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+}
+
+.service-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footnote{
+  color: gray;
+  margin-top: 30px;
+}
