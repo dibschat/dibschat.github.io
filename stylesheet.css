@@ -103,11 +103,15 @@ strong {
   pointer-events: none;
 }*/
 
-.table a:link, a:visited {
+.table a:link{
   text-decoration: none;
   color: #FF2800;
   /*background-color: white;*/
   font-weight: 600;
+}
+
+.table a:visited{
+  color: #FF2800;  
 }
 
 .table a:hover{
@@ -219,11 +223,15 @@ strong {
   gap: 20px;
 }
 
-.publication-links a:link a:visited {
+.publication-links a:link {
   background-color: black;
   color: white;
   padding: 0.3rem 0.5rem;
   border-radius: 3px;
+}
+
+.publication-links a:visited {
+  color: white;
 }
 
 .publication-links a:hover {
