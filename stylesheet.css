@@ -103,7 +103,7 @@ strong {
   pointer-events: none;
 }*/
 
-.table a:link{
+.table a:link, a:visited {
   text-decoration: none;
   color: #FF2800;
   /*background-color: white;*/
@@ -219,7 +219,7 @@ strong {
   gap: 20px;
 }
 
-.publication-links a:link {
+.publication-links a:link a:visited {
   background-color: black;
   color: white;
   padding: 0.3rem 0.5rem;
