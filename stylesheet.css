@@ -1,5 +1,7 @@
 /* Reset some default styles for consistency */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   padding-bottom: 0.2em;
   line-height: 1.25;
   /*padding-top: 0.5em;*/
@@ -31,7 +33,7 @@ h3 {
 p {
   font-size: 16px;
   line-height: 1.5;
-  margin-top: 0.0em;
+  margin-top: 0em;
   margin-bottom: 0.8em;
   padding: 0;
   text-align: justify;
@@ -40,9 +42,8 @@ p {
 body {
   /*font-family: breezesans, sans-serif;*/
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-         Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
-         Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-         "Segoe UI Symbol";
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   line-height: 1.6;
   color: #000;
   background-color: #fff;
@@ -99,14 +100,14 @@ table .header {
 }
 
 .top-bar a:hover {
-  color: #FF2800;
+  color: #ff2800;
 }
 
-.left-side{
+.left-side {
   padding-left: 10px;
 }
 
-.right-side{
+.right-side {
   padding-right: 10px;
 }
 
@@ -114,18 +115,18 @@ table .header {
   pointer-events: none;
 }*/
 
-.table a:link{
+.table a:link {
   text-decoration: none;
-  color: #FF2800;
+  color: #ff2800;
   /*background-color: white;*/
   font-weight: 600;
 }
 
-.table a:visited{
-  color: #FF2800;  
+.table a:visited {
+  color: #ff2800;
 }
 
-.table a:hover{
+.table a:hover {
   /*color: #FF2800;*/
   /*color: #4B9FE3;*/
   color: black;
@@ -144,7 +145,7 @@ table .header {
 
 .profile-image {
   padding-top: 20px;
-  width: 250px;  
+  width: 250px;
   border-radius: 50%;
   /*margin-bottom: 1rem;*/
   padding-left: 32px;
@@ -179,18 +180,18 @@ table .header {
 }
 
 .social-media i:hover {
-  color: #FF2800;
+  color: #ff2800;
 }
 
 .social-media a:hover {
   background-color: white;
-  padding: 0.0rem 0.0rem; /* Add this line to create some padding around the link text */
+  padding: 0rem 0rem; /* Add this line to create some padding around the link text */
   border-radius: 0px;
 }
 
 .bio-text {
   padding-top: 32px;
-  vertical-align : middle;
+  vertical-align: middle;
 }
 
 .news-scroll-box {
@@ -210,7 +211,7 @@ table .header {
   width: 300px;
 }
 
-.publication-name{
+.publication-name {
   font-size: large;
   font-weight: bold;
 }
@@ -220,7 +221,7 @@ table .header {
 }*/
 
 .publication-info {
-  font-style:italic;
+  font-style: italic;
 }
 
 .publication-links {
@@ -252,7 +253,7 @@ table .header {
   padding: 0;
 }
 
-.footnote{
+.footnote {
   color: gray;
   margin-top: 30px;
 }
