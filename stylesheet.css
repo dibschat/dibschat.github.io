@@ -144,7 +144,7 @@ table .header {
 }
 
 .profile-image {
-  pointer-events: none;
+  /*pointer-events: none;*/
   padding-top: 20px;
   width: 250px;
   border-radius: 50%;
