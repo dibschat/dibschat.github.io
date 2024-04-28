@@ -1,152 +1,494 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="author" content="Dibyadip Chatterjee">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Dibyadip Chatterjee" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Opening The Vocabulary of Egocentric Actions</title>
-  <link rel="stylesheet" href="stylesheet.css">
-  
-  <link rel="icon" type="image/png" href="images/PHDhat.png">
+    <title>Dibyadip Chatterjee's Homepage</title>
+    <link rel="stylesheet" href="stylesheet.css" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
-</head>
+    <link rel="icon" type="image/png" href="images/PHDhat.png" />
 
-<body>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-NK653JXC82"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-NK653JXC82");
+    </script>
 
-  <table id="about" class="total" width="1280" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
-      <td>
+    <!-- Fonts & Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css"
+      integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons"
+    />
+  </head>
 
-        <!--Title---------------------------------------------->
-        <table id="title" class="table" align="center" border="0" cellspacing="0" cellpadding="10">
-          <tr class="row">
-            <td class="cell">
-              <tr class="title-text">
-                <td>Opening the Vocabulary of Egocentric Actions</td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="author-names">
-                    <a href="https://dibschat.github.io/">Dibyadip Chatterjee<sup>1</sup></a>
-                    <a href="https://scholar.google.com/citations?user=-juoweoAAAAJ">Fadime Sener<sup>2</sup></a>
-                    <a href="https://shugaoma.github.io/">Shugao Ma<sup>2</sup></a>
-                    <a href="https://www.comp.nus.edu.sg/~ayao/">Angela Yao<sup>1</sup></a>
+  <body>
+    <!--About---------------------------------------------->
+    <table
+      id="about"
+      class="total"
+      width="1280"
+      border="0"
+      align="center"
+      cellspacing="0"
+      cellpadding="0"
+    >
+      <tr>
+        <td>
+          <table class="header" align="center" border="0" cellspacing="0">
+            <tr class="row">
+              <td class="cell">
+                <nav class="top-bar">
+                  <div class="left-side">
+                    <span class="name"
+                      ><a href="#about">Dibyadip Chatterjee</a></span
+                    >
                   </div>
-                  <div class="institution-names">
-                    <p><sup>1</sup>National University of Singapore</p>
-                    <p><sup>2</sup>Meta Reality Labs Research</p>
+                  <div class="right-side">
+                    <ul>
+                      <li><a href="#news">News</a></li>
+                      <li><a href="#publications">Publications</a></li>
+                      <li><a href="#academics">Academics</a></li>
+                    </ul>
                   </div>
-                  <div class="conference-names">
-                    <p>NeurIPS 2023</div></p>
-                  <div class="buttons">
-                    <a href="https://arxiv.org/abs/2308.11488" title="arXiv" rel="external nofollow noopener" target="_blank"><i class="fas fa-file-pdf"></i> arXiv</a>
-                    <a href="https://github.com/dibschat/openvocab-egoAR" title="Code" rel="external nofollow noopener" target="_blank"><i class="fab fa-github"></i> Code</a>
-                    <a href="https://github.com/dibschat/openvocab-egoAR/tree/main/data" title="Data" rel="external nofollow noopener" target="_blank"><span class="material-icons">file_download</span>Data</a>
-                  </div>
-                </td>
-              </tr>
-            </td>
-          </tr>
-        </table>
-
-        <!--Abstract---------------------------------------------->
-        <table id="abstract" class="table" align="center" border="0" cellspacing="0" cellpadding="10">
-          <tr class="row">
-            <td class="cell">
-              <h1>Abstract</h1>
-              <p>Human actions in egocentric videos are often hand-object interactions composed from a verb (performed by the hand) applied to an object. Despite their extensive scaling up, egocentric datasets still face two limitations &mdash; sparsity of action compositions and a closed set of interacting objects. This paper proposes a novel open vocabulary action recognition task. Given a set of verbs and objects observed during training, the goal is to generalize the verbs to an open vocabulary of actions with seen and novel objects. To this end, we decouple the verb and object predictions via an object-agnostic <em>verb encoder</em> and a prompt-based <em>object encoder</em>. The prompting leverages CLIP representations to predict an open vocabulary of interacting objects. We create open vocabulary benchmarks on the EPIC-KITCHENS-100 and Assembly101 datasets; whereas closed-action methods fail to generalize, our proposed method is effective. In addition, our object encoder significantly outperforms existing open-vocabulary visual recognition methods in recognizing novel interacting objects.</p>
-            </td>
-          </tr>
-        </table>
-
-        <!--Teaser Video---------------------------------------------->
-        <table id="teaser" class="table" align="center" border="0" cellspacing="0" cellpadding="10">
-          <tr class="row">
-            <td class="cell">
-                <tr class="teaser-video" align="center">
-                  <td>
-                    <figure>
-                      <video class="centered" width="100%" autoplay muted loop playsinline>
-                        <source src="images/teaser.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </figure>
-                  </td>
-                </tr>
-            </td>
-          </tr>
-        </table>
-
-        <!--Method---------------------------------------------->
-        <table id="method" class="table" align="center" border="0" cellspacing="0" cellpadding="10">
-          <tr class="row">
-            <td class="cell">
-              <h1>Method</h1>
-              <tr class="teaser-video" align="center">
-                  <td>
-                    <figure>
-                      <video class="centered" width="100%" autoplay muted loop playsinline>
-                        <source src="images/method.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </figure>
-                  </td>
-                </tr>
-            </td>
-          </tr>
-        </table>
-
-         <!--Open-Vocab-Benchmark---------------------------------------------->
-         <table id="benchmark" class="table" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr class="row">
-            <td class="cell">
-              <h1>Proposed Bechmark</h1>
-              <tr class="teaser-video" align="center">
-                  <td>
-                    <figure><img src="images/split.png" alt="method" width="90%"></figure>
-                  </td>
-              </tr>
-              <tr class="teaser-video" align="center">
-                <td>
-                  <figure><img src="images/benchmark.png" alt="method" width="90%"></figure>
-                </td>
+                </nav>
+              </td>
             </tr>
-            </td>
-          </tr>
-        </table>
-
-        <!--Citation---------------------------------------------->
-        <table id="citation" class="table" align="right" border="0" cellspacing="0" cellpadding="10">
-          <tr class="row">
-            <td class="cell">
-              <h1 >Citation</h1>
-              <div class="citation-box">
-                <pre><code>@inproceedings{chatterjee2023opening,
-  title={Opening the Vocabulary of Egocentric Actions},
-  author={Chatterjee, Dibyadip and Sener, Fadime and Ma, Shugao and Yao, Angela},
-  booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
-  year={2023}
-}</code></pre>
-              </div>
-            </td>
-          </tr>
-        </table>
-
-        <footer class='footnote'>
-          <table id="footers">
-              <tr>
-                  <td style="text-align: left;">&copy; <script>document.write( new Date().getFullYear() );</script> Dibyadip Chatterjee. All rights reserved.</td>
-                  <td style="text-align: right;">Get this webpage template <a href="https://github.com/dibschat/openvocab-egoAR/tree/main/docs">here</a> &nbsp;</td>
-              </tr>
           </table>
-      </footer> 
-      </td>
-    </tr>
-  </table>
+          <table
+            id="about"
+            class="table"
+            align="center"
+            border="0"
+            cellspacing="0"
+            cellpadding="10"
+          >
+            <tr class="row">
+              <td class="cell">
+                <tr class="bio-row">
+                  <td>
+                    <div>
+                      <img
+                        src="images/portrait.png"
+                        alt="Profile Image"
+                        class="profile-image"
+                      />
+                    </div>
+                    <div class="mail"><u>dibyadip (at) comp.nus.edu.sg</u></div>
+                    <div class="office"><u>Office</u>: AS6-04-11</div>
+                  </td>
+                  <td>
+                    <div class="bio-text">
+                      <p>
+                        I am a PhD Student in the
+                        <a href="https://www.comp.nus.edu.sg/"
+                          >School of Computing</a
+                        >
+                        at the National University of Singapore. I am a part of
+                        <a href="https://cvml.comp.nus.edu.sg/">CVML@NUS</a>
+                        advised by
+                        <a href="https://www.comp.nus.edu.sg/~ayao/"
+                          >Angela Yao</a
+                        >
+                        and closely collaborating with
+                        <a
+                          href="https://scholar.google.com/citations?user=-juoweoAAAAJ&hl=en"
+                          >Fadime Sener</a
+                        >. My graduate research is supported by the
+                        <a
+                          href="https://www.comp.nus.edu.sg/programmes/pg/phdcs/scholarships/#pgf"
+                          >President's Graduate Fellowship</a
+                        >.
+                      </p>
 
-</body>
+                      <p>
+                        I completed my bachelor's in Electronics &
+                        Telecommunication Engineering (ECE) from
+                        <a href="http://jaduniv.edu.in/">Jadavpur University</a>
+                        where I worked with
+                        <a
+                          href="https://scholar.google.com/citations?hl=en&user=MVooqJUAAAAJ&view_op=list_works"
+                          >Sanjoy Kumar Saha</a
+                        >
+                        and
+                        <a href="https://sites.google.com/site/anandachowdhury/"
+                          >Ananda S. Chowdhury</a
+                        >. My bachelor's thesis was on
+                        <a
+                          href="https://drive.google.com/file/d/1gccB1CqY_XfnEXfTHszZTXQ8h9q-e4hr/view?usp=sharing"
+                          >Open-Set Metric Learning for Person Re-identification
+                          in the Wild</a
+                        >.
+                      </p>
+
+                      <p>
+                        Broadly, I am interested in understanding how humans
+                        learn to perceive the 4D (3D+time) world in a vastly
+                        data-efficient manner. To this end, my current research
+                        revolves around the intersection of semantic
+                        understanding (recognition, captioning) of long-range
+                        (>30s) videos and 3D understanding of human-object
+                        interactions with a particular focus on open-world
+                        generalization.
+                      </p>
+                    </div>
+                    <div class="social-media">
+                      <a
+                        href="https://scholar.google.com/citations?user=6AxH8lcAAAAJ&hl=en"
+                        title="Google Scholar"
+                        rel="external nofollow noopener"
+                        target="_blank"
+                        ><i class="ai ai-google-scholar"></i
+                      ></a>
+                      <a
+                        href="https://github.com/dibschat"
+                        title="GitHub"
+                        rel="external nofollow noopener"
+                        target="_blank"
+                        ><i class="fab fa-github"></i
+                      ></a>
+                      <a
+                        href="https://www.linkedin.com/in/dibyadip-chatterjee/"
+                        title="Linkedin"
+                        rel="external nofollow noopener"
+                        target="_blank"
+                        ><i class="fab fa-linkedin"></i
+                      ></a>
+                      <a
+                        href="https://twitter.com/dibschat_"
+                        title="Twitter"
+                        rel="external nofollow noopener"
+                        target="_blank"
+                        ><i class="fab fa-twitter"></i
+                      ></a>
+                    </div>
+                  </td>
+                </tr>
+              </td>
+            </tr>
+          </table>
+
+          <!--News---------------------------------------------->
+          <table
+            id="news"
+            class="table"
+            align="right"
+            border="0"
+            cellspacing="0"
+            cellpadding="10"
+          >
+            <tr class="row">
+              <td class="cell">
+                <h1>News</h1>
+                <div class="news-scroll-box">
+                  <ul>
+                    <li>
+                      <strong>[March 2024]</strong> Check out our latest work "<a
+                        href="https://s-shamil.github.io/HandFormer/"
+                        >On the Utility of 3D Hand Poses for Action Recognition</a
+                      >". Now available on <a href="https://arxiv.org/abs/2403.09805">arXiv</a>.
+                    </li>
+                    <li>
+                      <strong>[September 2023]</strong> "<a
+                        href="https://dibschat.github.io/openvocab-egoAR/"
+                        >Opening the Vocabulary of Egocentric Actions</a
+                      >" has been accepted to
+                      <a href="https://nips.cc/">NeurIPS 2023</a>.
+                    </li>
+                    <li>
+                      <strong>[August 2023]</strong> Our latest work "<a
+                        href="https://dibschat.github.io/openvocab-egoAR/"
+                        >Opening the Vocabulary of Egocentric Actions</a
+                      >" is now available on
+                      <a href="https://arxiv.org/abs/2308.11488">arXiv</a>.
+                    </li>
+                    <li>
+                      <strong>[July 2023]</strong> Awarded the
+                      <a
+                        href="https://www.comp.nus.edu.sg/programmes/pg/phdcs/scholarships/#pgf"
+                        >President's Graduate Fellowship</a
+                      >
+                      for my PhD at NUS.
+                    </li>
+                    <li>
+                      <strong>[July 2023]</strong> Joining
+                      <a href="https://cvml.comp.nus.edu.sg/">CVML@NUS</a> as a
+                      PhD student starting this Fall 2023.
+                    </li>
+                    <li>
+                      <strong>[October 2022]</strong> Organized
+                      <a
+                        href="https://sites.google.com/view/egocentric-hand-body-activity"
+                        >Human Body, Hands, and Activities from Egocentric and
+                        Multi-view Cameras</a
+                      >
+                      (HBHA) workshop at ECCV 2022.
+                    </li>
+                    <li>
+                      <strong>[March 2022]</strong> Paper proposing a new
+                      procedural activity dataset
+                      <a href="https://assembly-101.github.io/">Assembly101</a>
+                      has been accepted to CVPR 2022.
+                    </li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+          </table>
+
+          <!--Publications---------------------------------------------->
+          <table
+            id="publications"
+            class="table"
+            align="center"
+            border="0"
+            cellspacing="0"
+            cellpadding="10"
+          >
+            <tr class="row">
+              <td class="cell">
+                <h1>Publications & Preprints</h1>
+                <tr class="publications-list">
+                  <td>
+                    <img
+                      src="images/handformer.png"
+                      alt="N/A"
+                      width="350"
+                      style="border-style: none"
+                    />
+                  </td>
+                  <td>
+                    <div class="publication-name">
+                      On the Utility of 3D Hand Poses for Action Recognition
+                    </div>
+                    <div class="publication-authors">
+                      Md Salman Shamil, <u>Dibyadip Chatterjee</u>, Fadime Sener, Shugao Ma,
+                      Angela Yao
+                    </div>
+                    <div class="publication-info">arXiv 2024 <strong >[New]</strong></div>
+                    <div class="publication-links">
+                      <a href="https://arxiv.org/abs/2403.09805">Paper</a>
+                      &nbsp;
+                      <a href="https://s-shamil.github.io/HandFormer/"
+                        >Page</a
+                      >
+                      <!--a href="#">Code</a-->
+                    </div>
+                  </td>
+                </tr>
+                <tr class="publications-list">
+                  <td>
+                    <img
+                      src="images/openegoAR.PNG"
+                      alt="N/A"
+                      width="350"
+                      style="border-style: none"
+                    />
+                  </td>
+                  <td>
+                    <div class="publication-name">
+                      Opening the Vocabulary of Egocentric Actions
+                    </div>
+                    <div class="publication-authors">
+                      <u>Dibyadip Chatterjee</u>, Fadime Sener, Shugao Ma,
+                      Angela Yao
+                    </div>
+                    <div class="publication-info">NeurIPS 2023</div>
+                    <div class="publication-links">
+                      <a href="https://arxiv.org/pdf/2308.11488.pdf">Paper</a>
+                      &nbsp;
+                      <a href="https://dibschat.github.io/openvocab-egoAR/"
+                        >Page</a
+                      >
+                      <!--a href="#">Code</a-->
+                    </div>
+                  </td>
+                </tr>
+                <tr class="publications-list">
+                  <td>
+                    <img
+                      src="images/assembly.jpg"
+                      alt="N/A"
+                      width="350"
+                      style="border-style: none"
+                    />
+                  </td>
+                  <td>
+                    <div class="publication-name">
+                      Assembly101: A Large-Scale Multi-View Video Dataset for
+                      Understanding Procedural Activities
+                    </div>
+                    <div class="publication-authors">
+                      Fadime Sener, <u>Dibyadip Chatterjee</u>, Daniel Shelepov,
+                      Kun He, Dipika Singhania, Robert Wang, Angela Yao
+                    </div>
+                    <div class="publication-info">CVPR 2022</div>
+                    <div class="publication-links">
+                      <a href="https://arxiv.org/pdf/2203.14712.pdf">Paper</a>
+                      &nbsp;
+                      <a href="https://assembly-101.github.io/">Page</a> &nbsp;
+                      <a href="https://www.youtube.com/watch?v=8T8x-iWa3qw"
+                        >Video</a
+                      >
+                    </div>
+                  </td>
+                </tr>
+                <tr class="publications-list">
+                  <td>
+                    <img
+                      src="images/tab.JPG"
+                      alt="N/A"
+                      width="350"
+                      style="border-style: none"
+                    />
+                  </td>
+                  <td>
+                    <div class="publication-name">
+                      Technical Report: Temporal Aggregate Representations
+                    </div>
+                    <div class="publication-authors">
+                      Fadime Sener, <u>Dibyadip Chatterjee</u>, Angela Yao
+                    </div>
+                    <div class="publication-info"><em>arXiv 2021</em></div>
+                    <div class="publication-links">
+                      <a href="https://arxiv.org/pdf/2106.03152.pdf">Paper</a>
+                      &nbsp;
+                      <a href="https://github.com/dibschat/tempAgg">Code</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="publications-list">
+                  <td>
+                    <img
+                      src="images/prid.jpg"
+                      alt="N/A"
+                      width="350"
+                      style="border-style: none"
+                    />
+                  </td>
+                  <td>
+                    <div class="publication-name">
+                      Open-set Metric Learning for Person Re-Identification in
+                      the Wild
+                    </div>
+                    <div class="publication-authors">
+                      Arindam Sikdar, <u>Dibyadip Chatterjee</u>, Arpan Bhowmik,
+                      Ananda S. Chowdhury
+                    </div>
+                    <div class="publication-info">ICIP 2020</div>
+                    <div class="publication-links">
+                      <a href="https://ieeexplore.ieee.org/document/9190744"
+                        >Paper</a
+                      >
+                    </div>
+                  </td>
+                </tr>
+                <tr class="publications-list">
+                  <td>
+                    <img
+                      src="images/ants.jpg"
+                      alt="N/A"
+                      width="350"
+                      style="border-style: none"
+                    />
+                  </td>
+                  <td>
+                    <div class="publication-name">
+                      Deep Learning Architectures for Modeling Communication
+                      Systems
+                    </div>
+                    <div class="publication-authors">
+                      <u>Dibyadip Chatterjee</u>, Harsh Jaiswal, Adarsh
+                      Honakamble, Konchady Gautam Shenoy
+                    </div>
+                    <div class="publication-info">
+                      International Conference on Advanced Networks and
+                      Telecommunications Systems (ANTS), 2019
+                      <strong>[Oral]</strong>
+                    </div>
+                    <div class="publication-links">
+                      <a href="https://ieeexplore.ieee.org/document/9118132"
+                        >Paper</a
+                      >
+                    </div>
+                  </td>
+                </tr>
+              </td>
+            </tr>
+          </table>
+
+          <!--Academic Service---------------------------------------------->
+          <table
+            id="academics"
+            class="table"
+            align="center"
+            border="0"
+            cellspacing="0"
+            cellpadding="10"
+          >
+            <tr class="row">
+              <td class="cell">
+                <h1>Academic Service</h1>
+                <ul class="service-list">
+                  <li>
+                    <strong>Reviewer</strong>: CVPR, ICCV, ECCV, BMVC, ACCV,
+                    TPAMI
+                  </li>
+                  <li>
+                    <strong>Teaching Assistant</strong>:
+                    <ul>
+                      <li>
+                        <a
+                          href="https://nusmods.com/courses/CS4243/computer-vision-and-pattern-recognition"
+                          >CS4243</a
+                        >, Computer Vision and Pattern Recognition, Spring 2024
+                      </li>
+                      <li>
+                        <a
+                          href="https://nusmods.com/courses/BT3017/feature-engineering-for-machine-learning"
+                          >BT3017</a
+                        >, Feature Engineering for Machine Learning, Spring 2024
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+
+          <footer class="footnote">
+            <p>
+              &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              Dibyadip Chatterjee. All rights reserved.
+            </p>
+          </footer>
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>
