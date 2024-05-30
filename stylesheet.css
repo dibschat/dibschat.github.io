@@ -52,7 +52,7 @@ body {
 }
 
 table {
-  max-width: 1280px; /* Maximum width for screens larger than 1280px */
+  max-width: 1160px; /* Maximum width for screens larger than 1280px */
   width: 100%; /* Fallback width for smaller screens */
   margin: 0 auto; /* Center the container */
   background-color: white;
@@ -141,6 +141,12 @@ table .header {
   padding-top: 50px;
   display: flex;
   gap: 20px;
+  align-items: center;
+}
+
+.bio-text {
+  padding-top: 32px;
+  vertical-align: middle;
 }
 
 .profile-image {
@@ -151,26 +157,28 @@ table .header {
   /*margin-bottom: 1rem;*/
   padding-left: 32px;
   padding-right: 32px;
+  height: auto;
 }
 
 .mail {
   padding-top: 10px;
-  text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
-  /*font-family: "Courier New", sans-serif;*/
+  /* color: gray; */
   color: gray;
+  text-align: center; /* Move this here to center the text */
+  /*font-family: "Courier New", sans-serif;*/
+  font-style: italic;
 }
 
-.office {
+/* .office {
   text-align: center;
-  font-size: 18px;
-  font-weight: 700;
-  /*font-family: "Courier New", sans-serif;*/
-}
+  font-size: 16px;
+  font-weight: 600;
+} */
 
 .social-media {
-  font-size: 48px;
+  font-size: 36px;
   display: flex;
   gap: 20px;
   justify-content: center;
@@ -190,19 +198,15 @@ table .header {
   border-radius: 0px;
 }
 
-.bio-text {
-  padding-top: 32px;
-  vertical-align: middle;
-}
-
 .news-scroll-box {
-  height: 120px;
+  height: 200px;
   overflow: auto;
   background-color: #f7f5f5;
-  padding: 10px;
+  padding: 2px 10px 10px 10px;
 }
 
 .publications-list {
+  align-items: center;
   margin-bottom: 1.5em;
   display: flex;
   gap: 20px;
@@ -210,6 +214,7 @@ table .header {
 
 .publications-list img {
   width: 300px;
+  height: auto;
 }
 
 .publication-name {
@@ -246,6 +251,12 @@ table .header {
   color: red;
   padding: 0.2rem 0.5rem;
   border-radius: 3px;
+}
+
+.academics-row {
+  padding-top: -30px;
+  display: flex;
+  padding-bottom: 50px;
 }
 
 .service-list {
