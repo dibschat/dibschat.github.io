@@ -111,6 +111,26 @@ table .header {
   padding-right: 10px;
 }
 
+/*img {
+  pointer-events: none;
+}*/
+
+/* .teaser-video {
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  margin-top: -40px;
+} */
+
+/* .teaser-video figure {
+  width: 90%;
+} */
+
+/* video {
+  display: block;
+  margin: auto;
+} */
+
 .table a:link {
   text-decoration: none;
   color: #ff2800;
@@ -255,9 +275,25 @@ table .header {
 }
 
 .academics-row {
-  padding-top: -30px;
+  /* margin-top: -30px; */
   display: flex;
   padding-bottom: 50px;
+}
+
+.service-list a:link {
+  text-decoration: none;
+  color: #ff2800;
+  /*background-color: white;*/
+  font-weight: 600;
+}
+
+.service-list a:visited {
+  color: #ff2800;
+}
+
+.service-list a:hover {
+  color: black;
+  font-weight: 600;
 }
 
 .service-list {
@@ -286,8 +322,8 @@ table .footer {
   align-items: center;
   margin: 0 auto;
   max-width: 1160px;
-  width: 100%;
-  margin: 0 auto;
+  width: 100%; /* Fallback width for smaller screens */
+  margin: 0 auto; /* Center the container */
 }
 
 @media (min-width: 1280px) {
