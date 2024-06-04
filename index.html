@@ -8,7 +8,7 @@
     <title>Dibyadip Chatterjee's Homepage</title>
     <link rel="stylesheet" href="stylesheet.css" />
 
-    <link rel="icon" type="image/png" href="images/PHDhat.png" />
+    <link rel="icon" type="image/png" href="images/dc_logo.png" />
 
     <!-- Google tag (gtag.js) -->
     <script
@@ -129,12 +129,6 @@
                         ><i class="fab fa-twitter"></i
                       ></a>
                     </div>
-                    <!-- <div class="mail">
-                      <span>dibyadip (at) comp.nus.edu.sg</span>
-                    </div> -->
-                    <!-- <div class="office">
-                      <span>office : AS6-04-11</span>
-                    </div> -->
                   </td>
                   <td>
                     <div class="bio-text">
@@ -190,36 +184,6 @@
                         open-world generalization.
                       </p>
                     </div>
-                    <!-- <div class="social-media">
-                      <a
-                        href="https://scholar.google.com/citations?user=6AxH8lcAAAAJ&hl=en"
-                        title="Google Scholar"
-                        rel="external nofollow noopener"
-                        target="_blank"
-                        ><i class="ai ai-google-scholar"></i
-                      ></a>
-                      <a
-                        href="https://github.com/dibschat"
-                        title="GitHub"
-                        rel="external nofollow noopener"
-                        target="_blank"
-                        ><i class="fab fa-github"></i
-                      ></a>
-                      <a
-                        href="https://www.linkedin.com/in/dibyadip-chatterjee/"
-                        title="Linkedin"
-                        rel="external nofollow noopener"
-                        target="_blank"
-                        ><i class="fab fa-linkedin"></i
-                      ></a>
-                      <a
-                        href="https://twitter.com/dibschat_"
-                        title="Twitter"
-                        rel="external nofollow noopener"
-                        target="_blank"
-                        ><i class="fab fa-twitter"></i
-                      ></a>
-                    </div> -->
                   </td>
                 </tr>
               </td>
@@ -322,7 +286,6 @@
                     <img
                       src="images/handformer.png"
                       alt="N/A"
-                      width="350"
                       style="border-style: none"
                     />
                   </td>
@@ -350,7 +313,6 @@
                     <img
                       src="images/openegoAR.PNG"
                       alt="N/A"
-                      width="350"
                       style="border-style: none"
                     />
                   </td>
@@ -375,11 +337,16 @@
                 </tr>
                 <tr class="publications-list">
                   <td>
-                    <img
-                      src="images/assembly.jpg"
+                    <video
+                      src="images/assembly.mp4"
                       alt="N/A"
-                      width="350"
                       style="border-style: none"
+                      class="centered"
+                      width="100%"
+                      autoplay
+                      muted
+                      loop
+                      playsinline
                     />
                   </td>
                   <td>
@@ -407,7 +374,6 @@
                     <img
                       src="images/tab.JPG"
                       alt="N/A"
-                      width="350"
                       style="border-style: none"
                     />
                   </td>
@@ -431,7 +397,6 @@
                     <img
                       src="images/prid.jpg"
                       alt="N/A"
-                      width="350"
                       style="border-style: none"
                     />
                   </td>
@@ -457,7 +422,6 @@
                     <img
                       src="images/ants.jpg"
                       alt="N/A"
-                      width="350"
                       style="border-style: none"
                     />
                   </td>
@@ -497,43 +461,70 @@
           >
             <tr class="row">
               <td class="cell">
-                <h1>Academic Service</h1>
-                <ul class="service-list">
-                  <li>
-                    <strong>Reviewer</strong>: CVPR, ICCV, ECCV, BMVC, ACCV,
-                    TPAMI
-                  </li>
-                  <li>
-                    <strong>Teaching Assistant</strong>:
-                    <ul>
-                      <li>
-                        <a
-                          href="https://nusmods.com/courses/CS4243/computer-vision-and-pattern-recognition"
-                          >CS4243</a
-                        >, Computer Vision and Pattern Recognition, Spring 2024
-                      </li>
-                      <li>
-                        <a
-                          href="https://nusmods.com/courses/BT3017/feature-engineering-for-machine-learning"
-                          >BT3017</a
-                        >, Feature Engineering for Machine Learning, Spring 2024
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
+                <tr class="academics-row">
+                  <h1>Academic Service</h1>
+                  <ul class="service-list">
+                    <li>
+                      <strong>Reviewer</strong>: CVPR, ICCV, ECCV, BMVC, ACCV,
+                      TPAMI
+                    </li>
+                    <li>
+                      <strong>Teaching Assistant</strong>:
+                      <ul>
+                        <li>
+                          <a
+                            href="https://nusmods.com/courses/CS4243/computer-vision-and-pattern-recognition"
+                            >CS4243</a
+                          >, Computer Vision and Pattern Recognition, Spring
+                          2024
+                        </li>
+                        <li>
+                          <a
+                            href="https://nusmods.com/courses/BT3017/feature-engineering-for-machine-learning"
+                            >BT3017</a
+                          >, Feature Engineering for Machine Learning, Spring
+                          2024
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </tr>
               </td>
             </tr>
           </table>
 
-          <footer class="footnote">
-            <p>
-              &copy;
-              <script>
-                document.write(new Date().getFullYear());
-              </script>
-              Dibyadip Chatterjee. All rights reserved.
-            </p>
-          </footer>
+          <table class="footer" align="center" border="0" cellspacing="0">
+            <tr class="row">
+              <td class="cell">
+                <nav class="bottom-bar">
+                  <div class="left-side">
+                    &copy;
+                    <script>
+                      document.write(new Date().getFullYear());
+                    </script>
+                    Dibyadip Chatterjee. All rights reserved.
+                  </div>
+                  <div class="right-side">
+                    Last updated: <span id="last-updated"></span>
+                    <script>
+                      function formatDate(date) {
+                        const options = {
+                          year: "numeric",
+                          month: "long",
+                          day: "numeric",
+                        };
+                        return date.toLocaleDateString(undefined, options);
+                      }
+                      const currentDate = new Date();
+                      const formattedDate = formatDate(currentDate);
+                      document.getElementById("last-updated").innerText =
+                        formattedDate;
+                    </script>
+                  </div>
+                </nav>
+              </td>
+            </tr>
+          </table>
         </td>
       </tr>
     </table>
